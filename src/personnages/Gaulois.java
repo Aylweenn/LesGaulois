@@ -28,15 +28,20 @@ public class Gaulois {
 		romain.recevoirCoup(force / 3);
 	}
 	
+	
 	public String toString() {
 		return "Gaulois [nom=" + nom + ", force=" + force
 		+ ", effetPotion=" + effetPotion + "]";
 	}
-	
+
 	public static void main(String[] args) {
-		Gaulois asterix = new Gaulois("asterix", 9);
+		Gaulois asterix = new Gaulois("Asterix", 8);
+		Romain romain = new Romain("Romain1",8);
+		System.out.println(asterix);
+		
 		asterix.parler("Bonjour");
-		asterix.toString();
+		asterix.frapper(romain);
+		
 	}
 		
 
